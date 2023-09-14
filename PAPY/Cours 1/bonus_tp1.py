@@ -54,11 +54,13 @@ class Game():
         else:
             self.play()
 
+    def run(self):
+        print("Mémorisez un nombre entre 1 et 100, je vais essayer de le retrouver.")
+        input("Appuyez sur <enter> quand vous serez prêt. Et ne trichez pas ensuite...")
+        self.play()
 
 if __name__ == '__main__':
-    print("Mémorisez un nombre entre 1 et 100, je vais essayer de le retrouver.")
-    input("Appuyez sur <enter> quand vous serez prêt. Et ne trichez pas ensuite...")
-    Game().play()
+    Game().run()
 
 
 
